@@ -1,0 +1,18 @@
+spring:
+ application:
+  name: amadeus-techtest-api
+ 
+ datasource:
+  url: jdbc:postgresql://localhost:5432/inventory_db
+  username: postgres
+  password: postgres
+  
+ cloud:
+  feign:
+   hystrix:
+    enabled: true
+  
+server:
+ port: 8092
+ 
+ 
